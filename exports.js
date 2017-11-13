@@ -9,7 +9,8 @@ const bip44path = "m/44'/888'/0'/0";
 function findWif () {
   try {
     const mnemonic = document.getElementById("mnemonic").value;
-    const actualSeed = bip39.mnemonicToSeed(mnemonic);
+    const passphrase = document.getElementById("passphrase").value;
+    const actualSeed = bip39.mnemonicToSeed(mnemonic,passphrase);
     const rootNode = bitcoinSecp256r1.HDNode.fromSeedBuffer(actualSeed, bitcoinSecp256r1.bitcoin);
     const pathNode = rootNode.derivePath(bip44path);
     const pathNodeChild0 = pathNode.derive(0);

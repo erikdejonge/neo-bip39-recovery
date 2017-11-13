@@ -20,9 +20,12 @@ form {
   <p>Donations of NEO or GAS welcome at APMyYHutJZsZVWAQRe9h4eVrzzD3HLroQW
   <div>
     <form onsubmit="return modules.findWif();">
-      Type in Mnemonic (24 word phrase)
+      Type in Mnemonic (24 word phrase, 1 space between words, no spaces at the beginning or the end)
       <p>
         <textarea id="mnemonic" rows="4" cols="50"></textarea>
+      <p>Type in Passphrase (can be anything, leave blank if you don't have one)
+      <p>
+        <textarea id="passphrase" rows="4" cols="50"></textarea>
       <p>
         <input type="submit" value="Find WIF">
       <p>WIF
@@ -33,11 +36,18 @@ form {
       <p>
         <textarea id="address" rows="4" cols="50"></textarea>
     </form>
+    <hr>
     Example phrases, if you would prefer not to use your own:
-    <p>EXAMPLE Mnemonic (24 word phrase): online ramp onion faculty trap clerk near rabbit busy gravity prize employ exit horse found slogan effort dash siren buzz sport pig
-      coconut element
+    <p>EXAMPLE Mnemonic (24 word phrase): online ramp onion faculty trap clerk near rabbit busy gravity prize employ exit horse found slogan effort dash
+      siren buzz sport pig coconut element<br>
     <p>EXAMPLE WIF (Do not use): KxGtKtYTsxCW997F762Zn62C2e72gQ9XMPkkL2231Rc4GuvSCuba
     <p>EXAMPLE Address (Do not use): AeKd54zJdgqXy41NgH1PicXTVcz3RdRFdh
+    <hr>
+    <p>EXAMPLE Mnemonic (24 word phrase): online ramp onion faculty trap clerk near rabbit busy gravity prize employ exit horse found slogan effort dash
+      siren buzz sport pig coconut element<br>
+    <p>EXAMPLE Passphrase (can be anything): wakeupneo
+    <p>EXAMPLE WIF (Do not use): L1PwpxpD24VN6JDJLvaKrdcMAn5uvyEwJAGhy8Nuuw8g9wyFrUgt
+    <p>EXAMPLE Address (Do not use): AG8MJP9srw7c8GGSjxvZJHLeLWV7dDSWQ6
   </div>
   <script src="imports.js"></script>
   <script>
