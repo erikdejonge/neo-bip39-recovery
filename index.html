@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>NEO bip39 recovery</title>
+<style type="text/css">
+.solid {
+  border: solid;
+  border-width: 0.5px;
+  text-align: right;
+  font-family: monospace;
+}
+
+form {
+  display: inline;
+}
+</style>
+</head>
+<body onload="onLoad();">
+  <p>Donations of NEO or GAS welcome at APMyYHutJZsZVWAQRe9h4eVrzzD3HLroQW
+  <div>
+    <form onsubmit="return modules.findWif();">
+      Type in Mnemonic (24 word phrase)
+      <p>
+        <textarea id="mnemonic" rows="4" cols="50"></textarea>
+      <p>
+        <input type="submit" value="Find WIF">
+      <p>WIF
+      <p>
+        <textarea id="wif" rows="4" cols="50"></textarea>
+      <p>
+      <p>Address
+      <p>
+        <textarea id="address" rows="4" cols="50"></textarea>
+    </form>
+    Example phrases, if you would prefer not to use your own:
+    <p>EXAMPLE Mnemonic (24 word phrase): online ramp onion faculty trap clerk near rabbit busy gravity prize employ exit horse found slogan effort dash siren buzz sport pig
+      coconut element
+    <p>EXAMPLE WIF (Do not use): KxGtKtYTsxCW997F762Zn62C2e72gQ9XMPkkL2231Rc4GuvSCuba
+    <p>EXAMPLE Address (Do not use): AeKd54zJdgqXy41NgH1PicXTVcz3RdRFdh
+  </div>
+  <script src="imports.js"></script>
+  <script>
+      function onLoad () {
+      }
+    </script>
+</body>
+</html>

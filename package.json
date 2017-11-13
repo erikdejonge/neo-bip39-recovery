@@ -1,0 +1,26 @@
+{
+	"name": "neo-bip39-recovery",
+	"version": "0.0.1",
+	"description": "bip39 recovery for NEO",
+	"main": "index.js",
+	"author": "(https://github.com/coranos)",
+	"repository": "coranos/neo-bip39-recovery",
+	"license": "MIT",
+	"scripts": {
+		"build": "webpack"
+	},
+	"_not_dependencies": {
+		
+	},
+	"dependencies": {
+		"base-x": "^3.0.2",
+		"bip39": "^2.4.0",
+		"bitcoinjs-lib-secp256r1": "https://github.com/coranos/bitcoinjs-lib-secp256r1.git",
+		"neon-js": "git+https://github.com/CityOfZion/neon-js.git#1.1.1"
+	},
+	"devDependencies": {
+		"babel-core": "^6.26.0",
+		"babel-loader": "^7.1.2",
+		"json-loader": "^0.5.7"
+	}
+}
