@@ -5,10 +5,9 @@ const wif = require("wif");
 const base58 = require("base-x")("123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz");
 const neonjs = require("neon-js");
 
-const bip44path = "m/44'/888'/0'/0";
-
 function findWif () {
   try {
+    const bip44path = document.getElementById("bip44path").value;
     const mnemonic = document.getElementById("mnemonic").value;
     const passphrase = document.getElementById("passphrase").value;
     const actualSeed = bip39.mnemonicToSeed(mnemonic,passphrase);
