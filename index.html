@@ -20,10 +20,13 @@ form {
   <p>Donations of NEO or GAS welcome at APMyYHutJZsZVWAQRe9h4eVrzzD3HLroQW
   <div>
     <form onsubmit="return modules.findWif();">
-      Bip44 Path. Do not change unless you know what you are doing.
+      Bip44 Path. Do not change unless you know what you are doing. Default path is:
+      <code>
+        m/44'/888'/0'/0<br>
+      </code>
       <p>
         <textarea id="bip44path" rows="1" cols="50">m/44'/888'/0'/0</textarea>
-        Type in Mnemonic (24 word phrase, 1 space between words, no spaces at the beginning or the end)
+      <p>Type in Mnemonic (24 word phrase, 1 space between words, no spaces at the beginning or the end)
       <p>
         <textarea id="mnemonic" rows="4" cols="50"></textarea>
       <p>Type in Passphrase (can be anything, leave blank if you don't have one)
