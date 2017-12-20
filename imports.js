@@ -5,7 +5,7 @@ const wif = require("wif");
 const base58 = require("base-x")("123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz");
 const neonjs = require("neon-js");
 
-function findWif () {
+function findWif() {
   try {
     const purpose = document.getElementById("purpose").value;
     const coin = document.getElementById("coin").value;
@@ -40,6 +40,7 @@ function findWif () {
 module.exports = {
   findWif : findWif
 };
+
 },{"base-x":2,"bip39":8,"bitcoinjs-lib-secp256r1":27,"neon-js":72,"wif":96}],2:[function(require,module,exports){
 // base-x encoding
 // Forked from https://github.com/cryptocoinjs/bs58

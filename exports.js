@@ -4,7 +4,7 @@ const wif = require("wif");
 const base58 = require("base-x")("123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz");
 const neonjs = require("neon-js");
 
-function findWif () {
+function findWif() {
   try {
     const purpose = document.getElementById("purpose").value;
     const coin = document.getElementById("coin").value;
@@ -39,4 +39,3 @@ function findWif () {
 module.exports = {
   findWif : findWif
 };
-
