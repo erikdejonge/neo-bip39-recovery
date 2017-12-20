@@ -15,7 +15,7 @@ function findWif() {
     const endIdx = document.getElementById("endIdx").value;
     const mnemonic = document.getElementById("mnemonic").value;
     const passphrase = document.getElementById("passphrase").value;
-    const bip44path = `m/${purpose}'/${coin}'/${account}'/${change}`;
+    const bip44path = `m/${purpose}/${coin}/${account}/${change}`;
     const actualSeed = bip39.mnemonicToSeed(mnemonic,passphrase);
     const rootNode = bitcoinSecp256r1.HDNode.fromSeedBuffer(actualSeed, bitcoinSecp256r1.bitcoin);
     const pathNode = rootNode.derivePath(bip44path);
