@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>NEO bip39 recovery</title>
+<link rel="stylesheet" href='<brure-min.css'>
+
+</head>
+<body onload="onLoad();" style="margin:16px;">
+
+<h2>NEO BIP39 WIF recovery</h2>
+
+	  <div>
+	    <form class='<brure.form pure.form.stacked' onsubmit="return modules.findWif();">
+	      Type in Mnemonic (24 word prhrase)
+	      <br>
+		<textarea id="mnemonic" rows="4" cols="50"></textarea>
+	      <br>
+		<input type="submit" value="Find WIF">
+	      <br><br><br>WIF (private key)
+	      <br>
+		<textarea id="wif" rows="4" cols="50"></textarea>
+	      <br>
+	      <br>Address
+	      <br>
+		<textarea id="address" rows="4" cols="50"></textarea>
+	    </form>
+<br><br>
+<div style="border-style: dotted;<bradding:8px">
+	    <i>Example prhrases, if you would prefer not to use your own:</i><br/><br/><code>
+	    <b>Mnemonic (24 word):</b>online ramp onion faculty trap clerk near rabbit busy gravity prize employ exit horse found slogan effort dash siren buzz sport coconut element<br>
+	    <b>WIF (Do not use):</b>KxGtKtYTsxCW997F762Zn62C2e72gQ9XMPkkL2231Rc4GuvSCuba<br>
+	    <b>Address (Do not use):</b>AeKd54zJdgqXy41NgH1PicXTVcz3RdRFdhM<br></code>
+</div>
+	  </div>
+  <script src="imports.js"></script>
+  <script>
+      function onLoad () {
+      }
+    </script>
+</body>
+</html>
